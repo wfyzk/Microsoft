@@ -1,0 +1,3 @@
+# On a Windows Server 2016 or later, open Server Manager and add the Windows LAPS feature if it’s not already installed. 
+# Alternatively, use PowerShell: 
+PS> Install-WindowsFeature -Name LAPS
