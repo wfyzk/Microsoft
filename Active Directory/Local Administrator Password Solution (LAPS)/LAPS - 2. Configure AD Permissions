@@ -1,0 +1,6 @@
+#Use PowerShell to grant the necessary permissions to read and write the password attributes in AD: 
+
+PS> Import-Module LAPS 
+PS> Set-LapsADPasswordPermissions -Identity "OU=Computers,DC=domain,DC=com" -AllowedPrincipals "ITSupportGroup" 
+PS> Set-LapsADPasswordExpirationTimePermissions -Identity "OU=Computers,DC=domain,DC=com" -AllowedPrincipals "SELF" 
+ 
